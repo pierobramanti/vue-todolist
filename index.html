@@ -27,13 +27,15 @@
                     <div class="col-12">
                         <div class="todo-list">
                             <ul class="list-unstyled">
-                                <li v-for="li, i in todo">
-                                    <div>
+                                <li v-for="li, i in todo" >
+                                    <div class="d-flex justify-content-between" >
                                         <div>
                                             {{ li.text }}
                                         </div>
                                         <div class="buttons">
-                                            <button class="btn btn-sm"></button>
+                                            <button class="btn btn-sm border">
+                                                <i class="fas fa-check text-white"></i>
+                                            </button>
                                             <button class="btn btn-sm"></button>
                                         </div>
                                     </div>
