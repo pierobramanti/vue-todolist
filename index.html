@@ -27,12 +27,17 @@
                     <div class="col-12">
                         <div class="todo-list">
                             <ul class="list-unstyled">
-                                <li>Lorem ipsum</li>
-                                <li>Lorem ipsum</li>
-                                <li>Lorem ipsum</li>
-                                <li>Lorem ipsum</li>
-                                <li>Lorem ipsum</li>
-                                <li>Lorem ipsum</li>
+                                <li v-for="li, i in todo">
+                                    <div>
+                                        <div>
+                                            {{ li.text }}
+                                        </div>
+                                        <div class="buttons">
+                                            <button class="btn btn-sm"></button>
+                                            <button class="btn btn-sm"></button>
+                                        </div>
+                                    </div>
+                                </li>
                             </ul>
                             <div class="d-flex">
                                 <input type="text" class="form-control" placeholder="nouva task">
