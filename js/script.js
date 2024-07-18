@@ -38,7 +38,10 @@ createApp({
     },
 
     remove(i){
-        this.todo.splice(i, 1)
+        if(confirm("Sicuro di voler eliminare questo impegno?")){
+            this.todo.splice(i, 1)
+        }
+        
     }
   }
 }).mount('#app');
