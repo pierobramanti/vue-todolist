@@ -35,6 +35,10 @@ createApp({
     ListDone(i) {
       this.todo[i].done = true;
       console.log(this.todo[i].done);
+    },
+
+    remove(i){
+        this.todo.splice(i, 1)
     }
   }
 }).mount('#app');
