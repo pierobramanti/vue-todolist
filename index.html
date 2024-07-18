@@ -29,11 +29,11 @@
                             <ul class="list-unstyled">
                                 <li v-for="li, i in todo" >
                                     <div class="d-flex justify-content-between" >
-                                        <div>
+                                        <div :class="todo[i].done == true ? 'text-decoration-line-through' : ''">
                                             {{ li.text }}
                                         </div>
                                         <div class="buttons">
-                                            <button class="btn btn-sm border">
+                                            <button class="btn btn-sm border" @click="ListDone(i)">
                                                 <i class="fas fa-check text-white"></i>
                                             </button>
                                             <button class="btn btn-sm"></button>
