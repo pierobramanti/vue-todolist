@@ -16,5 +16,16 @@ header{
     background-color: grey;
     margin: 50px 0;
     max-width: 75%;
-    height: 150px;
+    padding: 25px;
+}
+
+ul li{
+    margin: 20px 0;
+    padding: 30px 0;
+    border-bottom: 1px solid white;
+    color: white;
+}
+
+ul li:last-child{
+    border-bottom: none;
 }
