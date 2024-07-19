@@ -29,6 +29,7 @@ createApp({
           done: false
         },
       ],
+      newTask: undefined
     }
   },
   methods: {
@@ -42,6 +43,14 @@ createApp({
             this.todo.splice(i, 1)
         }
         
+    },
+    Add() {
+        let object= {
+            text: this.newTask,
+            done: false
+        }
+        this.todo.push(object)
+        this.newTask = undefined
     }
   }
 }).mount('#app');
